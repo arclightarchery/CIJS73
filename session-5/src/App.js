@@ -6,23 +6,22 @@ function App() {
   const circle = document.getElementsByClassName("circle");
 
   function onNext() {
-    if (circle[currentIndex].classList.contains("active")) {
-      console.log(circle[currentIndex].classList.contains("active"));
-      circle[currentIndex].classList.remove("active");
+    if(currentIndex>=2)
+    {
+      setCurrentIndex(currentIndex-2)
+    }
+    else
+    {
       setCurrentIndex(currentIndex + 1);
     }
-    circle[currentIndex].classList.add("active");
   }
 
   function onBack() {
-    if (circle[currentIndex].classList.contains("active")) {
-      circle[currentIndex].classList.remove("active");
+    if (currentIndex <= 0) {
+      setCurrentIndex(currentIndex + 2);
+    } else {
       setCurrentIndex(currentIndex - 1);
-      if (currentIndex <= 0) {
-        setCurrentIndex(currentIndex + 2);
-      }
     }
-    circle[currentIndex].classList.add("active");
   }
 
   return (
@@ -33,9 +32,15 @@ function App() {
           <Button value="Next" onClick={onNext} />
         </ButtonContainer>
         <CircleContainer>
-          <Light color="red active" />
-          <Light color="yellow" />
-          <Light color="light-green" />
+          <Light color="red" active={currentIndex === 0 ? "active" : null} />
+          <Light
+            color="yellow"
+            active={currentIndex === 1 ? "active" : null}
+          />
+          <Light
+            color="light-green"
+            active={currentIndex === 2 ? "active" : null}
+          />
         </CircleContainer>
       </div>
     </MainContent>
