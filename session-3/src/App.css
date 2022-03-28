@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "UberMoveLight";
+    src: url("../public/fonts/UberMoveTextLight.otf");
+}
+
+body {
+  background-image: url("https://wallpapercave.com/wp/wp2641180.png");
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container {
+  margin: 2rem 0 2rem 0;
+}
+
+.input {
+  caret-color: white;
+  color: white;
+  width: 30rem;
+  background-color: transparent;
+  border-style: none none solid none;
+  border-color: #cacaca;
+  font-family: "UberMoveLight";
+  font-size: 2rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgb(187, 187, 187);
+  padding: 0.5rem;
+}
+
+.checkbox-container {
+  color: white;
+  font-family: "UberMoveLight";
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.checkbox-value {
+  margin-left: 1rem;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  color: #b3b3b3;
+  font-weight: 600;
+}

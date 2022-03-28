@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px 10px 5px;
+  gap: 20px;
+}
+
+.button {
+  font-size: 24px;
+  padding: 16px 32px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.733)
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  outline: 1px solid black;
+}
+
+.circle.red.active {
+  background-color: red;
+}
+
+
+
+
+.circle.yellow.active {
+  background-color: yellow;
+}
+
+
+.circle.light-green.active {
+  background-color: lawngreen;
+}
