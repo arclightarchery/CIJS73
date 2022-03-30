@@ -1,0 +1,9 @@
+.expense-container {
+    width: 100%;
+    background-color: #1A1A1A;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+}

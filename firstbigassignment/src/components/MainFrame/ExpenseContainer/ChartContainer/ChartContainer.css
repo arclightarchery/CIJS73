@@ -1,0 +1,8 @@
+.chart-container {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #E1CAE4;
+    border-radius: 1.2rem;
+}

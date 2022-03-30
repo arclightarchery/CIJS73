@@ -1,0 +1,13 @@
+.expense-item {
+    background-color: #575757;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.expense-item:last-child {
+    margin-bottom: 4.5rem;
+}

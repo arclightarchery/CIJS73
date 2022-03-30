@@ -1,0 +1,21 @@
+.btn {
+    border-radius: 1.2rem;
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0.7rem 1.6rem;
+    box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.addNewExpanse, .addBtn {
+    background-color: #862796;
+    color: #FFFFFF;
+}
+
+.cancelBtn {
+    border: 1px solid #862796;
+    background-color: #D0D0D0;
+    color: #6A6A6A;
+}

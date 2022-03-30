@@ -1,0 +1,34 @@
+.input-group {
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 73.9rem;
+    padding: 0rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label {
+    color: #FFFFFF;
+    line-height: 2.109rem;
+}
+
+.input {
+    width: 57rem;
+    height: 4rem;
+    padding-left: 1rem;
+    border-radius: 1.2rem;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    font-family: Roboto, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.109rem;
+    color: #B0B0B0;
+}

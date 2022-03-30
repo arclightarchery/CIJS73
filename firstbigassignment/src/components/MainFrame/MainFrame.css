@@ -1,0 +1,6 @@
+.main-frame{
+    width: 79.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.4rem;
+}

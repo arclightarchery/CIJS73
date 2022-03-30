@@ -6,12 +6,9 @@ function App() {
   const circle = document.getElementsByClassName("circle");
 
   function onNext() {
-    if(currentIndex>=2)
-    {
-      setCurrentIndex(currentIndex-2)
-    }
-    else
-    {
+    if (currentIndex >= 2) {
+      setCurrentIndex(currentIndex - 2);
+    } else {
       setCurrentIndex(currentIndex + 1);
     }
   }
@@ -33,10 +30,7 @@ function App() {
         </ButtonContainer>
         <CircleContainer>
           <Light color="red" active={currentIndex === 0 ? "active" : null} />
-          <Light
-            color="yellow"
-            active={currentIndex === 1 ? "active" : null}
-          />
+          <Light color="yellow" active={currentIndex === 1 ? "active" : null} />
           <Light
             color="light-green"
             active={currentIndex === 2 ? "active" : null}
