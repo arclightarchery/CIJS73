@@ -4,16 +4,24 @@ import ButtonContainer from './ButtonContainer';
 function Task({ text, handleDelete }) {
   const [isEditable, setIsEditable] = useState(false);
   const taskRef = useRef();
+  
   const handleEdit = () => {
     setIsEditable(!isEditable);
     taskRef.current.focus();
   };
 
+  const handleEnter = (e) => {
+    if(e.key === 'Enter') {
+      e.preventDefault();
+      handleConfirm();
+    }
+  }
+
   const handleConfirm = () => {
     setIsEditable(!isEditable);
   }
   return (
-    <li className='task' ref={taskRef} contentEditable={isEditable}>
+    <li className='task' ref={taskRef} contentEditable={isEditable} onKeyPress={handleEnter}>
       <div className='round'>
         {isEditable ? null : (
           <>

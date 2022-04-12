@@ -63,12 +63,11 @@ const reducer = (state, action) => {
       break;
     case DELETE_TASK:
       const newTasks = [...state.tasks];
-
       newTasks.splice(action.payload, 1);
 
       newState = {
         ...state,
-        tasks: newTasks,
+        tasks: newTasks
       };
       break;
     case RESET_TASK:
@@ -86,7 +85,7 @@ const reducer = (state, action) => {
 function App() {
   const [state, dispatch] = useReducer(reducer, initState);
   const { input, tasks } = state;
-
+  
   const inputRef = useRef();
 
   const handleSubmit = () => {
@@ -94,15 +93,15 @@ function App() {
       dispatch(addTask(input));
       dispatch(setInput(''));
     }
-    inputRef.current.focus()
+    inputRef.current.focus();
   };
 
   const handleReset = () => {
     dispatch(resetTask());
   };
 
-  const handleDelete = () => {
-    dispatch(deleteTask());
+  const handleDelete = (index) => {
+    dispatch(deleteTask(index));
   };
 
   return (
@@ -129,7 +128,7 @@ function App() {
             <Task
               key={index}
               text={task}
-              handleDelete={handleDelete}
+              handleDelete={() => handleDelete(index)}
             />
           ))}
         </TaskList>
