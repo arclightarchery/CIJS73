@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-container {
+  border: 3px solid black;
+  border-radius: 3px;
+  padding: 48px;
+}
+
+.ui.center.aligned.container.auth-container {
+  width: 360px;
+}
+
+.form-container {
+  border: 3px solid black;
+  border-radius: 3px;
+  padding: 24px;
+}
+
+.ui.fluid.container.form-container {
+  width: 50%;
+}
+
+.login-text {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a > .item {
+  height: 47px;
+}
